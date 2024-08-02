@@ -1,0 +1,157 @@
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+body{
+    background-color: #fad178;
+}
+nav{
+    z-index: 9999;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 0 7px rgb(192, 161, 78);
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    font-size: 15px;
+}
+
+nav ul{
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #121212;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover{
+    color: #f5c45b;
+}
+main{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgb(192, 161, 78);
+}
+main img{
+    border-radius: 30%;
+}
+
+.left{
+    width: 100%;
+    font-size:150%;
+}
+
+.right{
+    width: 80%;
+    margin: auto;
+}
+
+.MobileButton{
+    display: none;
+}
+
+@media (max-width:620px) {
+    nav ul{
+        transition: 1s ease-in-out;
+        display: none; 
+        text-align: center;
+        position: absolute;
+        top: 130px;
+        left: 20%;  
+        width: 57%; 
+        translate: auto; 
+        z-index: 0;
+        border-radius: 0 0 20px 20px;  
+        box-shadow: 0 0 7 rgb(200,200,200);
+        background-color: white;
+        padding: 20px;
+        border-top: 2px solid rgb(200,200,200);
+    }
+    .MobileButton{
+        display: block;
+        margin-top: 9px;
+        cursor: pointer;
+    }
+}
+#Carrosel , #CarroselOu{
+    display: flex;
+    padding: 40px;
+    overflow-x: scroll;
+    gap: 15px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.item img{
+    border-radius: 20px;
+}
+.item{
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: 0 0 7px rgb(192, 161, 78);
+    height: 250px;
+    transition: 0.4s ease; 
+    background-color: white;
+    border-radius: 10px;
+}
+
+.details{
+    padding: 10px;
+    border-top:1px solid;
+}
+
+.item:hover{
+    transform: scale(1.1) translateY(22px);
+}
+
+#Avaliações{
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.AvaDiv{
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    width: 76%;
+    margin: auto;
+}
+
+.AvaDiv img{
+    border-radius: 20px; 
+}
